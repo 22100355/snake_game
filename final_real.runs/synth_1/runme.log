@@ -1,0 +1,430 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1002.980 ; gain = 118.766
+Command: read_checkpoint -auto_incremental -incremental C:/Users/yk/final_real/final_real.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/yk/final_real/final_real.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16328
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1843.547 ; gain = 409.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync_generator' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/vga_sync_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync_generator' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/vga_sync_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'snake' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/snake.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/yk/final_real/final_real.srcs/sources_1/new/snake.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'snake' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/snake.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fsm' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/fsm.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fsm' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/fsm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'turn' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/turn.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/yk/final_real/final_real.srcs/sources_1/new/turn.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'turn' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/turn.v:3]
+INFO: [Synth 8-6157] synthesizing module 'apple' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/apple.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'apple' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/apple.v:3]
+INFO: [Synth 8-6157] synthesizing module 'score' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/score.v:3]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_0' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_0' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_1' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_1' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_2' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_2' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_3' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_3' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/c_counter_binary_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'seg' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bcdto8segment_dataflow' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/bcdto8segment_dataflow.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bcdto8segment_dataflow' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/bcdto8segment_dataflow.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'seg' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'score' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/score.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ps2_kbd_top' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/ps2_kbd_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_kbd_new' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/ps2_kbd_new.v:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/yk/final_real/final_real.srcs/sources_1/new/ps2_kbd_new.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_kbd_new' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/ps2_kbd_new.v:36]
+INFO: [Synth 8-6157] synthesizing module 'debounce_pulse' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/debounce_pulse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_pulse' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/debounce_pulse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_kbd_top' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/ps2_kbd_top.v:23]
+WARNING: [Synth 8-7071] port 'Released' of module 'ps2_kbd_top' is unconnected for instance 'u7' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-7023] instance 'u7' of module 'ps2_kbd_top' has 8 connections declared, but only 7 given [C:/Users/yk/final_real/final_real.srcs/sources_1/new/top.v:126]
+INFO: [Synth 8-6157] synthesizing module 'audio' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/audio.v:4]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [C:/Users/yk/final_real/final_real.runs/synth_1/.Xil/Vivado-8648-AMD/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'pwm' [C:/Users/yk/final_real/final_real.srcs/sources_1/new/pwm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/pwm.v:23]
+WARNING: [Synth 8-6090] variable 'note_switch' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yk/final_real/final_real.srcs/sources_1/new/audio.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'audio' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/audio.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/yk/final_real/final_real.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-6014] Unused sequential element valid_reg was removed.  [C:/Users/yk/final_real/final_real.srcs/sources_1/new/ps2_kbd_new.v:241]
+WARNING: [Synth 8-6014] Unused sequential element return_reg was removed.  [C:/Users/yk/final_real/final_real.srcs/sources_1/new/audio.v:184]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1959.562 ; gain = 525.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1977.480 ; gain = 543.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1977.480 ; gain = 543.645
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1977.480 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_3/c_counter_binary_3/c_counter_binary_0_in_context.xdc] for cell 'u6/u3'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_3/c_counter_binary_3/c_counter_binary_0_in_context.xdc] for cell 'u6/u3'
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_2/c_counter_binary_2/c_counter_binary_0_in_context.xdc] for cell 'u6/u2'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_2/c_counter_binary_2/c_counter_binary_0_in_context.xdc] for cell 'u6/u2'
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_1/c_counter_binary_1/c_counter_binary_0_in_context.xdc] for cell 'u6/u1'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_1/c_counter_binary_1/c_counter_binary_0_in_context.xdc] for cell 'u6/u1'
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_148'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_148'
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u1/u2'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u1/u2'
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'u6/u0'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'u6/u0'
+Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'u8/bram'
+Finished Parsing XDC File [c:/Users/yk/final_real/final_real.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'u8/bram'
+Parsing XDC File [C:/Users/yk/Downloads/Greedy-Snake-Verilog-master/Greedy-Snake-Verilog-master/Code/xdc/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/yk/Downloads/Greedy-Snake-Verilog-master/Greedy-Snake-Verilog-master/Code/xdc/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yk/Downloads/Greedy-Snake-Verilog-master/Greedy-Snake-Verilog-master/Code/xdc/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yk/final_real/final_real.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/yk/final_real/final_real.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2090.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2090.191 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u1/u2' at clock pin 'clka' is different from the actual clock period '6.734', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u6/u0' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u6/u1' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u6/u2' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u6/u3' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u8/bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2090.191 ; gain = 656.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2090.191 ; gain = 656.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/yk/final_real/final_real.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/yk/final_real/final_real.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for u6/u3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u6/u2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u6/u1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_148. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u1/u2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u6/u0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u8/bram. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2090.191 ; gain = 656.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'ps2_kbd_new'
+INFO: [Synth 8-802] inferred FSM for state register 'st2_reg' in module 'ps2_kbd_new'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     S_H |                             0001 |                               00
+                   S_H2L |                             0010 |                               10
+                     S_L |                             0100 |                               01
+                   S_L2H |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'ps2_kbd_new'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               01
+                  iSTATE |                                1 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st2_reg' using encoding 'sequential' in module 'ps2_kbd_new'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2090.191 ; gain = 656.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	  11 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 67    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 1     
+	   5 Input   19 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 6     
+	   4 Input   11 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	  16 Input    8 Bit        Muxes := 1     
+	  75 Input    8 Bit        Muxes := 1     
+	  48 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 9     
+	   3 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 33    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 2     
+	  75 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP address2, operation Mode is: (D'+(A:0x3fffff4c))*(B:0x528).
+DSP Report: register u1/y_counter_reg is absorbed into DSP address2.
+DSP Report: operator address2 is absorbed into DSP address2.
+DSP Report: operator address3 is absorbed into DSP address2.
+DSP Report: Generating DSP address_reg, operation Mode is: PCIN+(A:0x0):B2+(C:0xfffffffffed9).
+DSP Report: register u1/x_counter_reg is absorbed into DSP address_reg.
+DSP Report: register address_reg is absorbed into DSP address_reg.
+DSP Report: operator address0 is absorbed into DSP address_reg.
+WARNING: [Synth 8-3332] Sequential element (u7/ps2/FSM_sequential_st2_reg) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 2090.191 ; gain = 656.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|display     | (D'+(A:0x3fffff4c))*(B:0x528)      | 20     | 11     | -      | 11     | 31     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|display     | PCIN+(A:0x0):B2+(C:0xfffffffffed9) | 30     | 12     | 10     | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 1    | 
++------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2090.191 ; gain = 656.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 2138.438 ; gain = 704.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:09 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|display     | D'+A*B         | 30     | 11     | -      | 11     | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|display     | (PCIN+A:B'+C)' | 0      | 12     | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_wiz_0          |         1|
+|2     |blk_mem_gen_0      |         1|
+|3     |c_counter_binary_0 |         1|
+|4     |c_counter_binary_1 |         1|
+|5     |c_counter_binary_2 |         1|
+|6     |c_counter_binary_3 |         1|
+|7     |blk_mem_gen_1      |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen      |     2|
+|3     |c_counter_binary |     4|
+|7     |clk_wiz          |     1|
+|8     |CARRY4           |   113|
+|9     |DSP48E1          |     2|
+|11    |LUT1             |    31|
+|12    |LUT2             |   144|
+|13    |LUT3             |   110|
+|14    |LUT4             |   197|
+|15    |LUT5             |   186|
+|16    |LUT6             |   517|
+|17    |MUXF7            |     3|
+|18    |FDCE             |    30|
+|19    |FDPE             |     5|
+|20    |FDRE             |   717|
+|21    |FDSE             |    34|
+|22    |IBUF             |     7|
+|23    |OBUF             |    35|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:12 . Memory (MB): peak = 2156.488 ; gain = 609.941
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:15 . Memory (MB): peak = 2156.488 ; gain = 722.652
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2159.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2163.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 704d23e
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 2163.031 ; gain = 1127.148
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yk/final_real/final_real.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 13:39:45 2023...
